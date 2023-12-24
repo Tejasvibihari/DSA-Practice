@@ -22,6 +22,16 @@ console.log(cars2[1]);
 const cars3 = new Array("BMW3", "AUDI3", "MARUTI3");
 console.log(cars3[2]);
 
+//Array can store any tyoe of data
+
+let person = { name: "Tejasvi Kumar", age: 22 };
+
+const newArr = ["Hello", "Tejasvi", person];
+console.log(newArr[2]);
+console.log(newArr[2].age);
+
+
+
 
 
 
