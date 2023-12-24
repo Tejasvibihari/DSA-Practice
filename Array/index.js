@@ -31,18 +31,26 @@ const app = express();
 // console.log(newArr[2].age);
 
 // Add or remove element form an array
-const newArr = ["Tejasvi"];
+// const newArr = ["Tejasvi"];
 
-newArr.push("Bihari");
-console.log(newArr);
-newArr.pop();
-console.log(newArr);
+// newArr.push("Bihari");
+// console.log(newArr);
+// newArr.pop();
+// console.log(newArr);
 
-newArr.unshift("Hello");
-console.log(newArr);
+// newArr.unshift("Hello");
+// console.log(newArr);
 
-newArr.shift();
-console.log(newArr);
+// newArr.shift();
+// console.log(newArr);
+
+//Looping an array
+
+// const newArray = ["Tejasvi", "Guriya", "Bihari", "Govind",];
+
+// for (let i = 0; i < newArray.length; i++) {
+//     console.log(newArray[i]);
+// }
 
 
 
