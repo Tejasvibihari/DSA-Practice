@@ -2,7 +2,7 @@ import { Console } from "console";
 import express from "express";
 const app = express();
 
-// Declare of Array 
+// Declare of Array
 
 // First way of declaration
 // const cars = ["BMW", "AUDI", "MARUTI"];
@@ -53,7 +53,7 @@ const app = express();
 // }
 
 //Inbuilt loop method
-const numbers = [1, 2, 3, 4, 5, 6];
+// const numbers = [1, 2, 3, 4, 5, 6];
 
 // const mapFn = numbers.map((item, index, array) => {
 //     return (item + 1);
@@ -67,13 +67,34 @@ const numbers = [1, 2, 3, 4, 5, 6];
 // });
 // console.log(filterFn);
 
-const reduceFn = numbers.reduce((prev, item) => {
-    return (prev + item);
+// const reduceFn = numbers.reduce((prev, item) => {
+//     return (prev + item);
 
-}, 0);
-console.log(reduceFn);
+// }, 0);
+// console.log(reduceFn);
 
+// Spread And Rest Operator
 
+// Ques 1- Second Largest Number in an Array
+
+const arr = [7, 4, 8, 1, 6, 10, 3, 9, 2, 5];
+
+function secondLargest(arr) {
+    const uniqueSet = new Set(arr); // Set is used to remove duplicate elements
+    const uniqueArr = Array.from(uniqueSet); // Convert set to array
+    console.log(uniqueSet);
+    console.log(uniqueArr);
+    uniqueArr.sort((a, b) => {
+        return b - a;
+    });
+    if (uniqueArr.length > 1) {
+        console.log(uniqueArr[1]);
+    } else {
+        console.log("Second largest number not found");
+    }
+}
+
+secondLargest(arr);
 
 
 
