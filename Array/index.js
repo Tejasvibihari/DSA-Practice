@@ -52,6 +52,26 @@ const app = express();
 //     console.log(newArray[i]);
 // }
 
+//Inbuilt loop method
+const numbers = [1, 2, 3, 4, 5, 6];
+
+// const mapFn = numbers.map((item, index, array) => {
+//     return (item + 1);
+
+// });
+// console.log(mapFn);
+
+// const filterFn = numbers.filter((item, index, array) => {
+//     return (item > 3);
+
+// });
+// console.log(filterFn);
+
+const reduceFn = numbers.reduce((prev, item) => {
+    return (prev + item);
+
+}, 0);
+console.log(reduceFn);
 
 
 
